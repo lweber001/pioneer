@@ -1,0 +1,1 @@
+/home/lweber/mybot_ws/devel/.private/mybot_navigation/share/mybot_navigation/cmake/mybot_navigationConfig.cmake

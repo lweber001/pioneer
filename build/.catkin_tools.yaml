@@ -1,0 +1,6 @@
+devel_space: /home/lweber/mybot_ws/devel
+install: false
+install_space: /home/lweber/mybot_ws/install
+profile: default
+source_space: /home/lweber/mybot_ws/src
+workspace: /home/lweber/mybot_ws

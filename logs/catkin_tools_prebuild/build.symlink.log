@@ -1,0 +1,8 @@
+Symlinking /home/lweber/mybot_ws/devel/./setup.zsh
+Symlinking /home/lweber/mybot_ws/devel/./setup.bash
+Symlinking /home/lweber/mybot_ws/devel/./_setup_util.py
+Symlinking /home/lweber/mybot_ws/devel/./setup.sh
+Symlinking /home/lweber/mybot_ws/devel/./env.sh
+Symlinking /home/lweber/mybot_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/lweber/mybot_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/lweber/mybot_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
