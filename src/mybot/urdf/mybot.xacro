@@ -5,9 +5,9 @@
   <xacro:property name="cameraSize" value="0.05"/>
   <xacro:property name="cameraMass" value="0.1"/>
 
-  <xacro:include filename="$(find mybot_description)/urdf/mybot.gazebo" />
-  <xacro:include filename="$(find mybot_description)/urdf/materials.xacro" />
-  <xacro:include filename="$(find mybot_description)/urdf/macros.xacro" />
+  <xacro:include filename="$(find mybot)/urdf/mybot.gazebo" />
+  <xacro:include filename="$(find mybot)/urdf/materials.xacro" />
+  <xacro:include filename="$(find mybot)/urdf/macros.xacro" />
 
 
   <link name='chassis'>
@@ -209,7 +209,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://mybot_description/meshes/hokuyo.dae"/>
+        <mesh filename="package://mybot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 
