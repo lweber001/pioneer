@@ -1,3 +1,3 @@
 #!/bin/bash
 
-roslaunch mybot_navigation mybot_teleop.launch
+roslaunch mybot mybot_teleop.launch
