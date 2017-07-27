@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo killall rosmaster
-sudo killall gzserver
-sudo killall gzclient
+sudo -E killall rosmaster
+sudo -E killall gzserver
+sudo -E killall gzclient
 source devel/setup.bash
 roslaunch mybot mybot_world.launch

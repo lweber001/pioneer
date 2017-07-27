@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /LaserScan1/Status1
       Splitter Ratio: 0.691666663
     Tree Height: 543
   - Class: rviz/Selection
@@ -26,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Image
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -40,27 +39,87 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        camera:
+        back_sonar:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        chassis:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hokuyo:
+        front_sonar:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_wheel:
+        hokuyo_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_wheel:
+        p3at_back_left_axle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_back_left_hub:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_back_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_back_right_axle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_back_right_hub:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_back_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_left_axle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_left_hub:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_right_axle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_right_hub:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        p3at_front_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_plate:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -175,10 +234,10 @@ Visualization Manager:
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.674796402
+      Pitch: 0.394796431
       Target Frame: base_link
       Value: Orbit (rviz)
-      Yaw: 0.384172559
+      Yaw: 0.579171777
     Saved: ~
 Window Geometry:
   Displays:
