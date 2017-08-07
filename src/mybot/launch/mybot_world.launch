@@ -52,7 +52,7 @@
 <!--                                                             -->
 <!--                       Gmapping                              -->
 
-<!-- include file="$(find mybot)/launch/includes/gmapping.launch"/ -->
+<!--include file="$(find mybot)/launch/includes/gmapping.launch"/-->
 
 <!--                                                             -->
 <!--                       Hector_Slam                           -->
