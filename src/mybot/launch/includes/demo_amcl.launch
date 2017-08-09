@@ -13,7 +13,7 @@
 
   <!-- Map server -->
   <arg name="map_file" default="$(find mybot)/map/hector.yaml"/>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" required="true" output="screen">
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
   <param name="frame_id" value="/map" />
   </node>
 

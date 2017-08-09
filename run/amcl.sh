@@ -4,4 +4,4 @@ sudo killall rosmaster
 sudo killall gzserver
 sudo killall gzclient
 source devel/setup.bash
-roslaunch mybot mybot_world.launch
+roslaunch mybot mybot_amcl.launch

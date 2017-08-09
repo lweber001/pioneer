@@ -375,6 +375,8 @@ name="pioneer3at">
 
 <xacro:macro name="p3at_gazebo_ext">
 
+  <!-- DRIVE CONTROLLERS -->
+
 <gazebo>
   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
     <updateRate>100.0</updateRate>
@@ -392,6 +394,9 @@ name="pioneer3at">
     <odometryTopic>odom</odometryTopic>
     <odometryFrame>odom</odometryFrame>
     <broadcastTF>1</broadcastTF>
+    <covariance_x>0.0001</covariance_x>
+    <covariance_y>0.0001</covariance_y>
+    <covariance_yaw>0.0001</covariance_yaw>
   </plugin>
 </gazebo>
 

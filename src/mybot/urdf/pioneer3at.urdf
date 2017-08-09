@@ -588,6 +588,10 @@
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <broadcastTF>1</broadcastTF>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_z>0.0001</covariance_z>
+      <covariance_yaw>0.0001</covariance_yaw>
     </plugin>
   </gazebo>
 
