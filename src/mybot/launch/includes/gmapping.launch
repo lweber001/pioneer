@@ -16,4 +16,6 @@
         <param name="particles" value="80"/>
 
     </node>
+
+    <!-- node pkg="pose_publisher" type="pose_publisher" name="pose_publisher" output="screen"/-->
 </launch>
