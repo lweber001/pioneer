@@ -30,6 +30,9 @@
     <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
 -->
 
+  <!--- Run Hector Slam for loc -->
+<!--include file="$(find mybot)/launch/includes/hector_slam.launch"/-->
+
  <!--- Run Move Base -->
   <include file="$(find mybot)/launch/includes/move_base.launch"/>
 

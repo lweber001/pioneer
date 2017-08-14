@@ -2,7 +2,7 @@ obstacle_range: 2.5  # an obstacle closer than 2.5 meters will be put in the cos
 raytrace_range: 3.0  # an obstacle distant for more than 3.0 meters will be remove from the costmap
 footprint: [[0.3, 0.3], [-0.3, 0.3], [-0.3, -0.3], [0.3, -0.3]]
 #robot_radius: 0.3
-inflation_radius: 0.55 # minimal distance between the geometry of the robot and the obstacles
+inflation_radius: 4.55 # minimal distance between the geometry of the robot and the obstacles
 
 observation_sources: laser_scan_sensor
 
