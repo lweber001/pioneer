@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /Current Goal1
         - /Map1
+        - /Map2
       Splitter Ratio: 0.702777803
     Tree Height: 603
   - Class: rviz/Selection
@@ -26,7 +27,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
   - Class: rviz/Tool Properties
     Expanded:
       - /Interact1
@@ -171,9 +172,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 999999
+      Max Intensity: 7.41286888e-43
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 1.21912966e-43
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -186,22 +187,6 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 1
-      Arrow Length: 0.300000012
-      Axes Length: 0.300000012
-      Axes Radius: 0.00999999978
-      Class: rviz/PoseArray
-      Color: 255; 25; 0
-      Enabled: false
-      Head Length: 0.0700000003
-      Head Radius: 0.0299999993
-      Name: Particule Cloud
-      Shaft Length: 0.230000004
-      Shaft Radius: 0.00999999978
-      Shape: Arrow (Flat)
-      Topic: /particlecloud
-      Unreliable: false
-      Value: false
     - Alpha: 1
       Class: rviz/Polygon
       Color: 255; 25; 0
@@ -304,6 +289,31 @@ Visualization Manager:
       Unreliable: false
       Use Timestamp: false
       Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Arrow
+      Topic: /slam_out_pose
+      Unreliable: false
+      Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /map_slam
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 61; 75; 52
@@ -324,7 +334,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 21.1314278
+      Distance: 29.6881332
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -338,10 +348,10 @@ Visualization Manager:
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.849797487
+      Pitch: 0.889797449
       Target Frame: base_link
       Value: Orbit (rviz)
-      Yaw: 4.49420595
+      Yaw: 5.01421022
     Saved: ~
 Window Geometry:
   Displays:

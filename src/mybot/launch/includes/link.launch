@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 base_link p3at_front_left_hub 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="1 0 0 0 0 0 base_link p3at_back_left_hub 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="1 0 0 0 0 0 base_link p3at_front_right_hub 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="1 0 0 0 0 0 base_link p3at_back_right_hub 100" />
+
+</launch>

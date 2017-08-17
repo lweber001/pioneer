@@ -11,6 +11,8 @@
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
   
+
+
  <!--                       Gazebo                               -->
  <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <!--arg name="world_name" value="$(find mybot_gazebo)/worlds/mybot.world"/-->
@@ -36,12 +38,9 @@
     <param name="use_gui" value="False"/>
   </node>
 
+  <node pkg="p2os_urdf" type="p2os_publisher_3at" name="publisher"/>
   <!-- Combine joint values -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
-
-  <!-- Show in Rviz   -->
-<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mybot)/rviz/amcl.rviz"/>
-
 
 
   <master auto="start"/>
@@ -50,6 +49,6 @@
 <!--                                                             -->
 <!--                       Amcl                                  -->
 
-<include file="$(find mybot)/launch/includes/demo_amcl.launch"/>
+<include file="$(find mybot)/launch/includes/demo_hector.launch"/>
 
 </launch>

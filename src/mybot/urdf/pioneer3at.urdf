@@ -11,9 +11,9 @@
   <!-- Chassis -->
   <link name="base_link">
     <!--  For pointers on inertial and gazebo-related parameters see
-		       * http://wiki.ros.org/urdf/Tutorials/Adding%20Physical%20and%20Collision%20Properties%20to%20a%20URDF%20Model
+           * http://wiki.ros.org/urdf/Tutorials/Adding%20Physical%20and%20Collision%20Properties%20to%20a%20URDF%20Model
                        * http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/
-		       * http://gazebosim.org/tutorials?tut=inertia&cat=build_robot, and 
+           * http://gazebosim.org/tutorials?tut=inertia&cat=build_robot, and 
                        * http://gazebosim.org/tutorials/?tut=ros_urdf
                        * http://en.wikipedia.org/wiki/List_of_moment_of_inertia_tensors  
                 -->

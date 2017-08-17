@@ -109,6 +109,38 @@ catkin_package(
 ## Build ##
 ###########
 
+#rosbuild_add_executable(tf_broadcaster src/tf_broadcaster.cpp)
+#rosbuild_add_executable(tf_broadcaster src/tf_broadcaster.cpp)
+
+find_package(catkin REQUIRED COMPONENTS geometry_msgs sensor_msgs std_msgs robot_state_publisher urdf)
+
+catkin_package(
+    CATKIN_DEPENDS robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
+add_executable(p2os_publisher src/publisher.cc)
+target_link_libraries(p2os_publisher ${catkin_LIBRARIES})
+
+install(TARGETS p2os_publisher
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+add_executable(p2os_publisher_3at src/publisher3at.cc)
+target_link_libraries(p2os_publisher_3at ${catkin_LIBRARIES})
+
+install(TARGETS p2os_publisher_3at
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(DIRECTORY 
+   launch defs meshes models
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+ )
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(

@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <launch>
   <!-- https://github.com/ros-planning/navigation/issues/206 -->
 <!--  <rosparam command="delete" ns="move_base" /> -->
@@ -19,7 +18,7 @@
   </node>
 
   <!--- Run AMCL -->
-  <include file="$(find mybot)/launch/includes/amcl.launch"/>
+  <!--include file="$(find mybot)/launch/includes/amcl.launch"/-->
 
     <!--arg name="initial_pose_x" value="0"/-->
     <!--arg name="initial_pose_y" value="0"/-->
@@ -35,7 +34,7 @@
 <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mybot)/rviz/hector_localization.rviz"/>
 
   <!--- Run Hector Slam for loc -->
-<!--include file="$(find mybot)/launch/includes/hector_slam.launch"/-->
+<include file="$(find mybot)/launch/includes/hector_slam.launch"/>
 
  <!--- Run Move Base -->
   <include file="$(find mybot)/launch/includes/move_base.launch"/>
