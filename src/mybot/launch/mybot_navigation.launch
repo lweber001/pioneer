@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+ <env name="GAZEBO_MODEL_PATH" value="$GAZEBO_MODEL_PATH:$(find mybot)/models" />
+  <env name="GAZEBO_RESOURCE_PATH" value="$GAZEBO_RESOURCE_PATH:$(find mybot)/models" />
+
+  <arg name="world" default="empty"/> 
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  
+
+
+ <!--                       Gazebo                               -->
+ <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--arg name="world_name" value="$(find mybot_gazebo)/worlds/mybot.world"/-->
+    <!--arg name="world_name" value="$(find mybot)/worlds/turtlebot_playground.world"/-->
+    <arg name="world_name" value="$(find mybot)/worlds/house.world"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  
+  <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-urdf -param robot_description -model pioneer3at" />
+
+   <!--                       Rviz                             -->
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find mybot)/urdf/pioneer3at.urdf'"/>
+
+  <!-- send fake joint values -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="False"/>
+  </node>
+
+  <node pkg="p2os_urdf" type="p2os_publisher_3at" name="publisher"/>
+  <!-- Combine joint values -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+
+  <master auto="start"/>
+  <param name="/use_sim_time" value="true"/>
+
+  <!-- Map server -->
+  <arg name="map_file" default="$(find mybot)/map/hector.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+  <param name="frame_id" value="/map" />
+  </node>
+
+<!--                                                             -->
+<!--                       Amcl                                  -->
+
+<!-- include file="$(find mybot)/launch/includes/navigation/amcl_localization.launch"/ -->
+
+<!--                       hector                               -->
+
+<include file="$(find mybot)/launch/includes/navigation/hector_localization.launch"/>
+
+ <!--- Run Move Base -->
+  <include file="$(find mybot)/launch/includes/navigation/move_base.launch"/>
+
+</launch>

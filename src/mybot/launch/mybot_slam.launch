@@ -51,16 +51,11 @@
 <!--                                                             -->
 <!--                       Gmapping                              -->
 
-<!--include file="$(find mybot)/launch/includes/gmapping.launch"/-->
+<!-- include file="$(find mybot)/launch/includes/slam/gmapping.launch"/-->
 
 <!--                                                             -->
 <!--                       Hector_Slam                           -->
 
-<include file="$(find mybot)/launch/includes/hector_slam.launch"/>
-
-<!--                                                             -->
-<!--                       Google Cartographer                   -->
-
-<!--include file="$(find mybot)/launch/includes/cartographer.launch"/-->
+<include file="$(find mybot)/launch/includes/slam/hector_slam.launch"/>
 
 </launch>

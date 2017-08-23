@@ -112,10 +112,10 @@ catkin_package(
 #rosbuild_add_executable(tf_broadcaster src/tf_broadcaster.cpp)
 #rosbuild_add_executable(tf_broadcaster src/tf_broadcaster.cpp)
 
-find_package(catkin REQUIRED COMPONENTS geometry_msgs sensor_msgs std_msgs robot_state_publisher urdf)
+find_package(catkin REQUIRED COMPONENTS geometry_msgs sensor_msgs std_msgs robot_state_publisher urdf tf)
 
 catkin_package(
-    CATKIN_DEPENDS robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs
+    CATKIN_DEPENDS robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs tf
 )
 
 include_directories(
