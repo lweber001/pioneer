@@ -26,16 +26,20 @@ $ catkin build
 ```
 2. Execute the bash script: 
 
-   To launch the slam node and control the robot with keyboard
+   - To launch the slam node and control the robot with keyboard
 
-   ```shell 
-   $ ./run/slam.sh
-   ```
+      ```shell 
+      $ ./run/slam.sh
+      ```
+      open an other terminal
+      ```shell 
+      $ ./run/teleop.sh
+      ```
 
-To launch the navigation node
-```shell 
-$ ./run/nav.sh
-```
+   - To launch the navigation node
+      ```shell 
+      $ ./run/nav.sh
+      ```
 
 
 ## Built With
