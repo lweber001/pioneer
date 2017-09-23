@@ -1,3 +1,5 @@
+<!-- Launch file to use the hector_slam algorithm on the robot -->
+
 <launch>
   <node pkg="hector_mapping" type="hector_mapping" name="hector_mapping" output="screen">
     <param name="pub_map_odom_transform" value="true"/>

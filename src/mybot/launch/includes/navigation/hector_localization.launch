@@ -1,3 +1,5 @@
+<!-- Launch file to use the hector_slam algorithm in order to get the robot pose (localization) -->
+
 <launch>
 
   <!-- Show in Rviz -->

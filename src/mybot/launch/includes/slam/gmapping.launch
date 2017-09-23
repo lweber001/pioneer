@@ -1,3 +1,5 @@
+<!-- Launch file to use the gmapping algorithm on the robot -->
+
 <!-- Run gmapping -->
 <launch>
     <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">

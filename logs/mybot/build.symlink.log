@@ -1,0 +1,5 @@
+Symlinking /home/louis/pioneer/devel/lib/pkgconfig/mybot.pc
+Symlinking /home/louis/pioneer/devel/lib/mybot/p2os_publisher
+Symlinking /home/louis/pioneer/devel/lib/mybot/p2os_publisher_3at
+Symlinking /home/louis/pioneer/devel/share/mybot/cmake/mybotConfig.cmake
+Symlinking /home/louis/pioneer/devel/share/mybot/cmake/mybotConfig-version.cmake

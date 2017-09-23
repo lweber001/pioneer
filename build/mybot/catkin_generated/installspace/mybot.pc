@@ -1,0 +1,8 @@
+prefix=/home/louis/pioneer/install
+
+Name: mybot
+Description: Description of mybot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/louis/pioneer/install/lib 
+Requires: robot_state_publisher urdf geometry_msgs sensor_msgs std_msgs tf

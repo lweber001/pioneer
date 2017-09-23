@@ -1,3 +1,5 @@
+<!-- Launch file to use an adaptive (or KLD-sampling) Monte Carlo localization algorithm on the robot -->
+
 <launch>
 
 <!-- Show in Rviz -->

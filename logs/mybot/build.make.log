@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target p2os_publisher_3at[0m
+[35m[1mScanning dependencies of target p2os_publisher[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/p2os_publisher_3at.dir/src/publisher3at.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/p2os_publisher.dir/src/publisher.cc.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/louis/pioneer/devel/.private/mybot/lib/mybot/p2os_publisher[0m
+[100%] [32m[1mLinking CXX executable /home/louis/pioneer/devel/.private/mybot/lib/mybot/p2os_publisher_3at[0m
+[100%] Built target p2os_publisher
+[100%] Built target p2os_publisher_3at
