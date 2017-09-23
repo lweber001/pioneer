@@ -3,12 +3,13 @@
  A MobileRobot pioneer 3-AT was implemented on Gazebo with a 2D laser sensor. Then the simulated robot was surrounded with static object. This repository also provides ROS launch files in order to build the map of the robot environment or let the robot navigate in it. 
 
 ## Dependecies
-To run the project you need both the [Gazebo](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install) and [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu), as well as extra packages not shipped with the ROS Desktop-full installation:
+To run the project you need both the [Gazebo 8](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install) and [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu), as well as extra packages not shipped with the ROS Desktop-full installation:
 ```shell 
 $ sudo apt-get install ros-kinetic-slam-gmapping
 $ sudo apt-get install ros-kinetic-hector-slam
 $ sudo apt-get install ros-kinetic-navigation
 $ sudo apt-get install ros-kinetic-turtlebot-teleop
+$ sudo apt-get install ros-kinetic-gazebo8*
 ```
 
 ## Setting Up
