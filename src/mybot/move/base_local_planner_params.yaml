@@ -1,3 +1,5 @@
+# The base planner is used to generate the velocity commands to move our robot
+
 TrajectoryPlannerROS:
   max_vel_x: 0.8
   min_vel_x: 0.1

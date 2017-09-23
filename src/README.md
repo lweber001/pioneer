@@ -1,8 +1,12 @@
-octomap_mapping
-===============
+ROS Navigation Stack
 
-ROS stack for mapping with OctoMap, contains the octomap_server package.
+A 2D navigation stack that takes in information from odometry, sensor streams, and a goal pose and outputs safe velocity commands that are sent to a mobile base.
 
-The `master` branch tracks the latest (stable) releases. Please send pull requests against the latest development branch, e.g. `indigo-devel`.
+Devel Job Status: Devel Job Status
+AMD64 Debian Job Status: Build Status
+Related stacks:
 
-Imported from SVN, see https://code.google.com/p/alufr-ros-pkg/ for the previous versions.
+http://github.com/ros-planning/navigation_msgs (new in Jade+)
+http://github.com/ros-planning/navigation_tutorials
+http://github.com/ros-planning/navigation_experimental
+For discussion, please check out the https://groups.google.com/group/ros-sig-navigation mailing list.

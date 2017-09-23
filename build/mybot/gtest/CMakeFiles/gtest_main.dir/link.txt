@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/louis/pioneer/build/mybot/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/louis/pioneer/build/mybot/gtest/src:/home/louis/pioneer/build/mybot/gtest 

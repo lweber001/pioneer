@@ -1,6 +1,0 @@
-devel_space: /home/louis/pioneer/devel
-install: false
-install_space: /home/louis/pioneer/install
-profile: default
-source_space: /home/louis/pioneer/src
-workspace: /home/louis/pioneer

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- Launch file to simulate a robot on Gazebo, use hector_slam or gmapping slam algorthm and show the result on RVIZ -->
 
-<?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
  <env name="GAZEBO_MODEL_PATH" value="$GAZEBO_MODEL_PATH:$(find mybot)/models" />
