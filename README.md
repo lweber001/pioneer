@@ -6,7 +6,7 @@
 To run the project you need both the [Gazebo](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install) and [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu), as well as extra packages not shipped with the ROS Desktop-full installation:
 ```shell 
 $ sudo apt-get install ros-kinetic-slam-gmapping
-$ sudo apt-get install ros-kinetic-hector*
+$ sudo apt-get install ros-kinetic-hector-slam
 $ sudo apt-get install ros-kinetic-navigation
 $ sudo apt-get install ros-kinetic-turtlebot-teleop
 ```
@@ -17,8 +17,6 @@ The first time you need to call a python script that will generate the necessary
 $ cd your-arduino-sketchbook/libraries
 $ rosrun rosserial_arduino make_libraries.py .
 ```
-
-*Note: In case you later generate (and install!) a new custom ROS message, or you install a new package with new messages, you will need to run again this script.*
 
 ## Running
 1. Complie and Load The Arduino code to your board with the Arduino IDE
@@ -31,10 +29,6 @@ $ roslaunch arduino_ros_examples oscillator.launch
 What things you need to install the software and how to install them
 
 ROS kenetic sudo apt-get install ros-kinetic-desktop
-Catkin
-ROS packages
-Gazebo 7
-RVIZ
 
 ```
 
