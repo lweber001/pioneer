@@ -10,8 +10,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+ROS kenetic sudo apt-get install ros-kinetic-desktop
+Catkin
+ROS packages
+Gazebo 7
+RVIZ
+
 ```
-Give examples
+ros-kinetic-gazebo
+ros-kinetic-gmapping
+ros-kinetic-joint-state-publisher
+ros-kinetic-joy
+ros-kinetic-map
+ros-kinetic-nav
+ros-kinetic-navigation
+ros-kinetic-p2os
+ros-kinetic-rqt
+ros-kinetic-sensor-msgs
+ros-kinetic-slam-gmapping
+ros-kinetic-tf
+ros-kinetic-turtlebot-teleop
+ros-kinetic-viz
 ```
 
 ### Installing
