@@ -2,11 +2,31 @@
 
  A MobileRobot pioneer 3-AT was implemented on Gazebo with a 2D laser sensor. Then the simulated robot was surrounded with static object. This repository also provides ROS launch files in order to build the map of the robot environment or let the robot navigate in it. 
 
-## Getting Started
+## Dependecies
+To run the project you need both the [Gazebo](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install) and [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu), as well as extra packages not shipped with the ROS Desktop-full installation:
+```shell 
+$ sudo apt-get install ros-kinetic-slam-gmapping
+$ sudo apt-get install ros-kinetic-hector*
+$ sudo apt-get install ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-turtlebot-teleop
+```
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Setting Up
+The first time you need to call a python script that will generate the necessary code for the Arduino. 
+```shell 
+$ cd your-arduino-sketchbook/libraries
+$ rosrun rosserial_arduino make_libraries.py .
+```
 
-### Prerequisites
+*Note: In case you later generate (and install!) a new custom ROS message, or you install a new package with new messages, you will need to run again this script.*
+
+## Running
+1. Complie and Load The Arduino code to your board with the Arduino IDE
+2. Execute the launch file: 
+```shell 
+$ roslaunch arduino_ros_examples oscillator.launch
+```
+
 
 What things you need to install the software and how to install them
 
@@ -17,8 +37,7 @@ Gazebo 7
 RVIZ
 
 ```
-ros-kinetic-gazebo
-ros-kinetic-gmapping
+
 ros-kinetic-joint-state-publisher
 ros-kinetic-joy
 ros-kinetic-map
@@ -27,10 +46,6 @@ ros-kinetic-navigation
 ros-kinetic-p2os
 ros-kinetic-rqt
 ros-kinetic-sensor-msgs
-ros-kinetic-slam-gmapping
-ros-kinetic-tf
-ros-kinetic-turtlebot-teleop
-ros-kinetic-viz
 ```
 
 ### Installing
