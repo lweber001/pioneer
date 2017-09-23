@@ -1,6 +1,6 @@
 # Robot navigation using laser sensor in ROS 
 
- A MobileRobot pioneer 3-AT was implemented on ROS with a laser sensor. This repository also provides launch files in order to build the map of the robot environment and let the robot navigate in it. The simulated robot was surrounded with static object using gazebo. 
+ A MobileRobot pioneer 3-AT was implemented on Gazebo with a 2D laser sensor. Then the simulated robot was surrounded with static object. This repository also provides ROS launch files in order to build the map of the robot environment or let the robot navigate in it. 
 
 ## Getting Started
 
