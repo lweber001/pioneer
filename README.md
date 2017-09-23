@@ -8,6 +8,7 @@ To run the project you need both the [Gazebo 8](http://gazebosim.org/tutorials?t
 $ sudo apt-get install ros-kinetic-slam-gmapping
 $ sudo apt-get install ros-kinetic-hector-slam
 $ sudo apt-get install ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-amcl
 $ sudo apt-get install ros-kinetic-turtlebot-teleop
 $ sudo apt-get install ros-kinetic-gazebo8*
 ```
@@ -41,33 +42,16 @@ $ catkin build
       $ ./run/nav.sh
       ```
 
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the BSD License 
 
-## Acknowledgments
+## ROS Packages
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [Gmapping](http://wiki.ros.org/gmapping) - Brian Gerkey
+* [Hector_slam](http://wiki.ros.org/hector_slam) -  Stefan Kohlbrecher & Johannes Meyer <meyer AT fsr.tu-darmstadt DOT de>
+* [Amcl](http://wiki.ros.org/amcl?distro=lunar) -  Brian Gerkey 
+* [Navigation](http://wiki.ros.org/navigation) - Eitan Marder-Eppstein
+
+
+
