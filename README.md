@@ -12,19 +12,29 @@ $ sudo apt-get install ros-kinetic-turtlebot-teleop
 ```
 
 ## Setting Up
-The first time you need to call a python script that will generate the necessary code for the Arduino. 
+Copy the repository and create a [Catkin workspace](http://wiki.ros.org/catkin)
 ```shell 
-$ cd your-arduino-sketchbook/libraries
-$ rosrun rosserial_arduino make_libraries.py .
+$ git clone https://github.com/lweber001/pioneer.git
+$ cd pioneer
+$ catkin build
 ```
 
 ## Running
-1. Complie and Load The Arduino code to your board with the Arduino IDE
-2. Execute the launch file: 
+1. Compile the package mybot
 ```shell 
-$ roslaunch arduino_ros_examples oscillator.launch
+$ catkin build
+```
+2. Execute the bash script: 
+
+To launch the slam node
+```shell 
+$ ./run/slam.sh
 ```
 
+To launch the navigation node
+```shell 
+$ ./run/nav.sh
+```
 
 What things you need to install the software and how to install them
 
